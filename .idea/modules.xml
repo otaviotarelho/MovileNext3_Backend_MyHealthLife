@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Application-Resources/Application-Resources.iml" filepath="$PROJECT_DIR$/Application-Resources/Application-Resources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Data-Service/Data-Service.iml" filepath="$PROJECT_DIR$/Data-Service/Data-Service.iml" />
       <module fileurl="file://$PROJECT_DIR$/MovileNext3.iml" filepath="$PROJECT_DIR$/MovileNext3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Reports/Reports.iml" filepath="$PROJECT_DIR$/Reports/Reports.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Report-Service/Report-Service.iml" filepath="$PROJECT_DIR$/Report-Service/Report-Service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Signin-Service/Signin-Service.iml" filepath="$PROJECT_DIR$/Signin-Service/Signin-Service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Users/Users.iml" filepath="$PROJECT_DIR$/Users/Users.iml" />
+      <module fileurl="file://$PROJECT_DIR$/User-Service/User-Service.iml" filepath="$PROJECT_DIR$/User-Service/User-Service.iml" />
     </modules>
   </component>
 </project>
