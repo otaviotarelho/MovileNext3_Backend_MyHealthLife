@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="MovileNext3" />
         <module name="User-Service" />
       </profile>
       <profile name="Annotation profile for applicationsresources" enabled="true">
@@ -23,6 +24,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Data-Service" target="1.8" />
+      <module name="MovileNext3" target="1.5" />
       <module name="Report-Service" target="1.8" />
       <module name="User-Service" target="1.8" />
     </bytecodeTargetLevel>

@@ -56,7 +56,7 @@ class UserServiceTest {
         User user = new UserMock().buildUser();
         when(repository.findById(anyLong())).thenThrow(ObjectNotFoundException.class);
 
-        assertThrows(ObjectNotFoundException.class, () -> userService.getUserById(user));
+        assertThrows(ObjectNotFoundException.class, () -> userService.getUserById(user.getId()));
     }
 
     @Test
@@ -87,7 +87,7 @@ class UserServiceTest {
 
         when(repository.findAllByType(any())).thenReturn(users);
 
-        assertEquals(users, userService.listUsersByType(UserType.USER));
+        assertEquals(users, userService.findAllUsersByType(UserType.USER));
     }
 
     @Test
@@ -102,7 +102,7 @@ class UserServiceTest {
 
         when(repository.findAllByType(any())).thenReturn(users);
 
-        assertEquals(users, userService.listUsersByType(UserType.PERSONAL_TRAINER));
+        assertEquals(users, userService.findAllUsersByType(UserType.PERSONAL_TRAINER));
     }
 
     @Test
@@ -117,7 +117,7 @@ class UserServiceTest {
 
         when(repository.findAllByType(any())).thenReturn(users);
 
-        assertEquals(users, userService.listUsersByType(UserType.DOCTOR));
+        assertEquals(users, userService.findAllUsersByType(UserType.DOCTOR));
     }
 
     @Test
@@ -132,7 +132,7 @@ class UserServiceTest {
 
         when(repository.findAllByType(any())).thenReturn(users);
 
-        assertEquals(users, userService.listUsersByType(UserType.ADMIN));
+        assertEquals(users, userService.findAllUsersByType(UserType.ADMIN));
     }
 
 }

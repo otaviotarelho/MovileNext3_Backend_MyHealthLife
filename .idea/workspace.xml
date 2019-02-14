@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38536b40-672e-4b63-be17-c92c123ca2d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/controller/exception/ExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/controller/exception/StandardError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/ObjectMock/UserMock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_197.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_2_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovileNext3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MovileNext3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/UsersApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/UsersApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/service/UserServiceTest.java" afterDir="false" />
@@ -19,6 +20,7 @@
     <ignored path="$PROJECT_DIR$/Application-Resources/target/" />
     <ignored path="$PROJECT_DIR$/Reports/target/" />
     <ignored path="$PROJECT_DIR$/User-Service/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +30,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/UsersApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="435">
+              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,19 +60,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Reports/Reports.iml" />
-        <option value="$PROJECT_DIR$/User-Service/pom.xml" />
         <option value="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/domain/enumerator/UserType.java" />
         <option value="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/domain/dto/UserDTO.java" />
         <option value="$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/ObjectMock/User.java" />
         <option value="$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/ObjectMock/UserMock.java" />
-        <option value="$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/UsersApplicationTests.java" />
         <option value="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/service/UserService.java" />
         <option value="$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/service/UserServiceTest.java" />
         <option value="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/domain/Relationship.java" />
         <option value="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/domain/User.java" />
         <option value="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/controller/exception/StandardError.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/User-Service/pom.xml" />
         <option value="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/UsersApplicationTests.java" />
       </list>
     </option>
   </component>
@@ -81,10 +84,16 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="2560" />
-    <option name="height" value="990" />
+    <option name="width" value="1680" />
+    <option name="height" value="960" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -95,22 +104,55 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MovileNext3" type="58d84e3e:PackageViewProjectNode" />
+              <item name="User-Service" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="MovileNext3" type="58d84e3e:PackageViewProjectNode" />
+              <item name="User-Service" type="616d4139:PackageViewModuleNode" />
+              <item name="edu.otaviotarelho.users" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="MovileNext3" type="58d84e3e:PackageViewProjectNode" />
+              <item name="User-Service" type="616d4139:PackageViewModuleNode" />
+              <item name="edu.otaviotarelho.users" type="1f31426a:PackageElementNode" />
+              <item name="domain" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="MovileNext3" type="58d84e3e:PackageViewProjectNode" />
+              <item name="User-Service" type="616d4139:PackageViewModuleNode" />
+              <item name="edu.otaviotarelho.users" type="1f31426a:PackageElementNode" />
+              <item name="domain" type="1f31426a:PackageElementNode" />
+              <item name="dto" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="MovileNext3" type="58d84e3e:PackageViewProjectNode" />
+              <item name="User-Service" type="616d4139:PackageViewModuleNode" />
+              <item name="edu.otaviotarelho.users" type="1f31426a:PackageElementNode" />
+              <item name="domain" type="1f31426a:PackageElementNode" />
+              <item name="enumerator" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="MovileNext3" type="58d84e3e:PackageViewProjectNode" />
+              <item name="User-Service" type="616d4139:PackageViewModuleNode" />
+              <item name="edu.otaviotarelho.users" type="1f31426a:PackageElementNode" />
+              <item name="ObjectMock" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
               <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="Data-Service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="Report-Service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
@@ -162,58 +204,6 @@
               <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
               <item name="User-Service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="enumerator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -235,91 +225,12 @@
             </path>
             <path>
               <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.data:spring-data-commons:2.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.data:spring-data-commons:2.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-data-commons-2.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.data:spring-data-commons:2.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-data-commons-2.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.data:spring-data-commons:2.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-data-commons-2.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MovileNext3" type="58d84e3e:PackageViewProjectNode" />
-              <item name="User-Service" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="58d84e3e:PackageViewProjectNode" />
-              <item name="User-Service" type="616d4139:PackageViewModuleNode" />
-              <item name="edu.otaviotarelho.users" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="58d84e3e:PackageViewProjectNode" />
-              <item name="User-Service" type="616d4139:PackageViewModuleNode" />
-              <item name="edu.otaviotarelho.users" type="1f31426a:PackageElementNode" />
-              <item name="domain" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="58d84e3e:PackageViewProjectNode" />
-              <item name="User-Service" type="616d4139:PackageViewModuleNode" />
-              <item name="edu.otaviotarelho.users" type="1f31426a:PackageElementNode" />
-              <item name="domain" type="1f31426a:PackageElementNode" />
-              <item name="dto" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="58d84e3e:PackageViewProjectNode" />
-              <item name="User-Service" type="616d4139:PackageViewModuleNode" />
-              <item name="edu.otaviotarelho.users" type="1f31426a:PackageElementNode" />
-              <item name="domain" type="1f31426a:PackageElementNode" />
-              <item name="enumerator" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="58d84e3e:PackageViewProjectNode" />
-              <item name="User-Service" type="616d4139:PackageViewModuleNode" />
-              <item name="edu.otaviotarelho.users" type="1f31426a:PackageElementNode" />
-              <item name="ObjectMock" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
+  <component name="RunManager" selected="JUnit.UsersApplicationTests">
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="User-Service" />
       <extension name="coverage">
@@ -378,6 +289,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.otaviotarelho.users.service" />
       <option name="MAIN_CLASS_NAME" value="edu.otaviotarelho.users.service.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="User-Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.otaviotarelho.users.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.otaviotarelho.users" />
+      <option name="MAIN_CLASS_NAME" value="edu.otaviotarelho.users.UsersApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -406,6 +332,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UsersApplicationTests" />
         <item itemvalue="JUnit.UserServiceTest" />
       </list>
     </recent_temporary>
@@ -425,6 +352,7 @@
       <workItem from="1549933791404" duration="6000" />
       <workItem from="1550016324454" duration="4345000" />
       <workItem from="1550068481361" duration="7031000" />
+      <workItem from="1550157675493" duration="463000" />
     </task>
     <servers />
   </component>
@@ -435,9 +363,15 @@
     <history-entry file="UserServiceTest - 2019.02.13 at 22h 12m 41s.xml">
       <configuration name="UserServiceTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UsersApplicationTests - 2019.02.14 at 13h 27m 17s.xml">
+      <configuration name="UsersApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersApplicationTests - 2019.02.14 at 13h 28m 05s.xml">
+      <configuration name="UsersApplicationTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13618000" />
+    <option name="totallyTimeSpent" value="14083000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -452,16 +386,15 @@
     <frame x="0" y="23" width="1680" height="960" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27106228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32949308" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32949308" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32949308" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -475,6 +408,8 @@
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50039715" side_tool="true" weight="0.37082404" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="bottom" id="Inspection Results" order="15" sideWeight="0.49960285" weight="0.32962137" />
+      <window_info anchor="bottom" id="Messages" order="16" />
+      <window_info anchor="right" id="Module Dependencies" weight="0.32967034" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -512,13 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User-Service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/domain/enumerator/UserType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -542,23 +470,6 @@
             <element signature="e#832#833#0" expanded="true" />
             <element signature="e#965#966#0" expanded="true" />
             <element signature="e#992#993#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/UsersApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/UsersApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -617,16 +528,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/domain/Relationship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/domain/Relationship.java" />
     <entry file="file://$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -675,10 +577,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User-Service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/UsersApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="-469">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/UsersApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

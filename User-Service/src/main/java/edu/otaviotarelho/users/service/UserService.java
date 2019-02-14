@@ -31,7 +31,7 @@ public class UserService {
         repository.delete(user);
     }
 
-    public List<User> listUsersByType(UserType type){
+    public List<User> findAllUsersByType(UserType type){
         return repository.findAllByType(type);
     }
 
@@ -39,7 +39,7 @@ public class UserService {
         return repository.findByUsernameAndPassword(user.getUsername(), user.getPassword()).orElseThrow(() -> new ObjectNotFoundException(user, "User not found"));
     }
 
-    public User getUserById(User user){
-        return repository.findById(user.getId()).orElseThrow(() -> new ObjectNotFoundException(user, "User not found"));
+    public User getUserById(Long id){
+        return repository.findById(id).orElseThrow(() -> new ObjectNotFoundException(new User(), "User not found"));
     }
 }
