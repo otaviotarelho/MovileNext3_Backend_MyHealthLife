@@ -19,7 +19,6 @@
         <sourceOutputDir name="../Reports/target/generated-sources/annotations" />
         <sourceTestOutputDir name="../Reports/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Report-Service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

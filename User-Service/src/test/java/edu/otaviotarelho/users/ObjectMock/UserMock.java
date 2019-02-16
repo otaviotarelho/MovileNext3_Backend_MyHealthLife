@@ -26,6 +26,11 @@ public class UserMock {
         return this;
     }
 
+    public UserMock withId(Long id){
+        this.user.setId(id);
+        return this;
+    }
+
     public UserMock withoutEmail(){
         this.user.setEmail("");
         return this;
