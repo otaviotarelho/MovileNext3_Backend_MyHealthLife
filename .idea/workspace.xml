@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38536b40-672e-4b63-be17-c92c123ca2d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/controller/Relationship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Discovery-Service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/domain/Relationships.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/domain/Relationships.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/repository/RelationshipRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/repository/RelationshipRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/service/RelationshipService.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/service/RelationshipService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/UsersApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/UsersApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/service/RelationshipServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/service/RelationshipServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Discovery-Service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Discovery-Service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Discovery-Service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Service/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/Discovery-Service/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/Discovery-Service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Discovery-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Service/src/main/java/edu/otaviotarelho/applicationsresources/ApplicationsresourcesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Discovery-Service/src/main/java/edu/otaviotarelho/applicationsresources/ApplicationsresourcesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Service/src/test/java/edu/otaviotarelho/applicationsresources/ApplicationsresourcesApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Discovery-Service/src/test/java/edu/otaviotarelho/applicationsresources/ApplicationsresourcesApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Users/target/" />
@@ -33,13 +35,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/service/RelationshipServiceTest.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="30" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="390">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -86,6 +85,7 @@
         <option value="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/controller/Relationship.java" />
         <option value="$PROJECT_DIR$/User-Service/src/main/java/edu/otaviotarelho/users/controller/UserController.java" />
         <option value="$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/service/RelationshipServiceTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -176,127 +176,22 @@
               <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
               <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
               <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
               <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
               <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
               <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
               <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovileNext3" type="462c0819:PsiDirectoryNode" />
-              <item name="User-Service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MovileNext3" type="b2602c69:ProjectViewProjectNode" />
@@ -553,7 +448,7 @@
       </method>
     </configuration>
     <configuration name="ApplicationsresourcesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Data-Service" />
+      <module name="Discovery-Service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="edu.otaviotarelho.applicationsresources.ApplicationsresourcesApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -604,7 +499,7 @@
       <workItem from="1550192079915" duration="3573000" />
       <workItem from="1550271595675" duration="6898000" />
       <workItem from="1550677953418" duration="2797000" />
-      <workItem from="1550709913455" duration="1464000" />
+      <workItem from="1550709913455" duration="1900000" />
     </task>
     <servers />
   </component>
@@ -641,7 +536,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30601000" />
+    <option name="totallyTimeSpent" value="31037000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -712,7 +607,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Report-Service/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/Data-Service/pom.xml">
+    <entry file="file://$PROJECT_DIR$/Discovery-Service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
@@ -984,11 +879,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/User-Service/src/test/java/edu/otaviotarelho/users/service/RelationshipServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="30" selection-end-column="65" />
+        <state relative-caret-position="488">
+          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>

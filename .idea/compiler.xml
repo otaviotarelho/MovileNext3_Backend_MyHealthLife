@@ -13,11 +13,11 @@
         <sourceOutputDir name="../Application-Resources/target/generated-sources/annotations" />
         <sourceTestOutputDir name="../Application-Resources/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Data-Service" />
+        <module name="Discovery-Service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Data-Service" target="1.8" />
+      <module name="Discovery-Service" target="1.8" />
       <module name="MovileNext3" target="1.5" />
       <module name="Report-Service" target="1.8" />
       <module name="User-Service" target="1.8" />
@@ -25,7 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Data-Service" options="-parameters" />
+      <module name="Discovery-Service" options="-parameters" />
       <module name="Report-Service" options="-parameters" />
       <module name="User-Service" options="-parameters" />
     </option>
