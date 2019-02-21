@@ -8,19 +8,27 @@ import edu.otaviotarelho.users.domain.enumerator.UserType;
 import edu.otaviotarelho.users.repository.RelationshipRepository;
 import edu.otaviotarelho.users.repository.UserRepository;
 import org.hibernate.ObjectNotFoundException;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
+import org.mockito.Spy;
 
-import java.util.Optional;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
+import static java.util.Optional.ofNullable;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Matchers.any;
+import static org.mockito.Mockito.when;
 
 class RelationshipServiceTest {
+
+    @Spy
+    List<Relationships> listOfRelationships = new LinkedList<>();
 
     @Mock
     private RelationshipRepository repository;
@@ -42,13 +50,13 @@ class RelationshipServiceTest {
         User userOne = new UserMock().withUserType(UserType.USER).buildUser();
         User userTwo = new UserMock().withId(Long.valueOf(2)).withUserType(UserType.PERSONAL_TRAINER).buildUser();
 
-        Mockito.when(userRepository.findById(any())).thenReturn(Optional.ofNullable(userOne), Optional.ofNullable(userTwo));
+        when(userRepository.findById(any())).thenReturn(ofNullable(userOne), ofNullable(userTwo));
 
         Relationships relationships = new Relationships().setUser(userOne.getId()).setProfessional(userTwo.getId());
 
-        Mockito.when(repository.save(any())).thenReturn(relationships);
+        when(repository.save(any())).thenReturn(relationships);
 
-        Assertions.assertDoesNotThrow(() -> service.create(userOne.getId(), userTwo.getId()));
+        assertDoesNotThrow(() -> service.create(userOne.getId(), userTwo.getId()));
      }
 
      @Test
@@ -56,9 +64,9 @@ class RelationshipServiceTest {
          User userOne = null;
          User userTwo = new UserMock().withId(Long.valueOf(2)).withUserType(UserType.PERSONAL_TRAINER).buildUser();
 
-         Mockito.when(userRepository.findById(any())).thenReturn(Optional.ofNullable(userOne), Optional.ofNullable(userTwo));
+         when(userRepository.findById(any())).thenReturn(ofNullable(userOne), ofNullable(userTwo));
 
-         Assertions.assertThrows(ObjectNotFoundException.class, () -> service.create(Long.valueOf(30), userTwo.getId()));
+         assertThrows(ObjectNotFoundException.class, () -> service.create(Long.valueOf(30), userTwo.getId()));
      }
 
      @Test
@@ -66,9 +74,9 @@ class RelationshipServiceTest {
          User userOne = new UserMock().withUserType(UserType.USER).buildUser();
          User userTwo = null;
 
-         Mockito.when(userRepository.findById(any())).thenReturn(Optional.ofNullable(userOne), Optional.ofNullable(userTwo));
+         when(userRepository.findById(any())).thenReturn(ofNullable(userOne), ofNullable(userTwo));
 
-         Assertions.assertThrows(ObjectNotFoundException.class, () -> service.create(userOne.getId(), Long.valueOf(30)));
+         assertThrows(ObjectNotFoundException.class, () -> service.create(userOne.getId(), Long.valueOf(30)));
      }
 
      @Test
@@ -76,9 +84,9 @@ class RelationshipServiceTest {
          User userOne = new UserMock().withUserType(UserType.DOCTOR).buildUser();
          User userTwo = new UserMock().withId(Long.valueOf(2)).withUserType(UserType.PERSONAL_TRAINER).buildUser();
 
-         Mockito.when(userRepository.findById(any())).thenReturn(Optional.ofNullable(userOne), Optional.ofNullable(userTwo));
+         when(userRepository.findById(any())).thenReturn(ofNullable(userOne), ofNullable(userTwo));
 
-         Assertions.assertThrows(OperationNotSupportedByThisUserException.class, () -> service.create(userOne.getId(), Long.valueOf(30)));
+         assertThrows(OperationNotSupportedByThisUserException.class, () -> service.create(userOne.getId(), Long.valueOf(30)));
      }
 
      @Test
@@ -86,9 +94,9 @@ class RelationshipServiceTest {
          User userOne = new UserMock().withUserType(UserType.USER).buildUser();
          User userTwo = new UserMock().withId(Long.valueOf(2)).withUserType(UserType.USER).buildUser();
 
-         Mockito.when(userRepository.findById(any())).thenReturn(Optional.ofNullable(userOne), Optional.ofNullable(userTwo));
+         when(userRepository.findById(any())).thenReturn(ofNullable(userOne), ofNullable(userTwo));
 
-         Assertions.assertThrows(OperationNotSupportedByThisUserException.class, () -> service.create(userOne.getId(), Long.valueOf(30)));
+         assertThrows(OperationNotSupportedByThisUserException.class, () -> service.create(userOne.getId(), Long.valueOf(30)));
      }
 
     @Test
@@ -96,13 +104,23 @@ class RelationshipServiceTest {
         User userOne = new UserMock().withUserType(UserType.USER).buildUser();
         User userTwo = new UserMock().withId(Long.valueOf(2)).withUserType(UserType.PERSONAL_TRAINER).buildUser();
 
-        Mockito.when(userRepository.findById(any())).thenReturn(Optional.ofNullable(userOne), Optional.ofNullable(userTwo));
+        when(userRepository.findById(any())).thenReturn(ofNullable(userOne), ofNullable(userTwo));
 
-        Assertions.assertDoesNotThrow(()->service.delete(userOne.getId(), userTwo.getId()));
+        assertDoesNotThrow(()->service.delete(userOne.getId(), userTwo.getId()));
     }
 
     @Test
-    void shouldReturnListOfUsersInRelationshipWithUserOne() {
+    void shouldReturnListOfUsersInRelationshipWithOneUser() {
+        User userOne = new UserMock().buildUser();
 
+        Relationships relationships = new Relationships().setUser(userOne.getId()).setProfessional(userOne.getId());
+
+        listOfRelationships.addAll(Arrays.asList(relationships, relationships, relationships, relationships));
+
+        when(repository.findAllByUser(userOne.getId())).thenReturn(listOfRelationships);
+
+        when(userRepository.findById(any())).thenReturn(ofNullable(userOne));
+
+        assertDoesNotThrow(() -> service.findAllRelationshipsOfUser(userOne.getId()));
     }
 }

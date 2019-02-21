@@ -14,6 +14,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Optional;
 
 
 @Service
@@ -53,9 +56,29 @@ public class RelationshipService {
         repository.delete(relationships);
     }
 
-    public RelationshipDTO findAllRelationshipsOfUser(){
+    public RelationshipDTO findAllRelationshipsOfUser(Long idUser){
+        ModelMapper modelMapper = new ModelMapper();
 
-        return null;
+        User user = userRepository.findById(idUser).orElseThrow(() -> new ObjectNotFoundException(new User(), "User not found"));
+
+        List<Relationships> relationships = repository.findAllByUser(idUser);
+
+        if(relationships == null){
+            throw new ObjectNotFoundException(new RelationshipDTO(), "No user relationships found");
+        }
+
+        RelationshipDTO relationshipDTO = new RelationshipDTO().setUser( modelMapper.map(user, UserDTO.class)).setUsersRelated(new LinkedList<>());
+
+        relationships.forEach((relation) -> {
+            Optional<User> professional = userRepository.findById(relation.getProfessional());
+
+            if(professional.isPresent()){
+                relationshipDTO.getUsersRelated().add(modelMapper.map(professional, UserDTO.class));
+            }
+
+        });
+
+        return relationshipDTO;
     }
 
     private void getUsersOperation(Long idUser, Long idProfessional) {

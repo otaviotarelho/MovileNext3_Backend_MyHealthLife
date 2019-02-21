@@ -66,7 +66,7 @@ public class UserController {
         return noContent().build();
     }
 
-    @GetMapping
+    @GetMapping(value = "/all/{type}")
     public ResponseEntity<List<UserDTO>> findAllByType(@PathVariable("type") UserType type){
         Iterable<User> users = service.findAllUsersByType(type);
 

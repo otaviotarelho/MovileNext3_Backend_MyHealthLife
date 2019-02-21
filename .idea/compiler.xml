@@ -15,11 +15,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Data-Service" />
       </profile>
-      <profile name="Annotation profile for reports" enabled="true">
-        <sourceOutputDir name="../Reports/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../Reports/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Data-Service" target="1.8" />

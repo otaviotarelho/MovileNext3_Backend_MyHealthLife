@@ -1,5 +1,6 @@
 package edu.otaviotarelho.users;
 
+import edu.otaviotarelho.users.ObjectMock.UserMock;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -34,7 +35,7 @@ public class UsersApplicationTests {
 
     @Test
     void insertUser() throws Exception {
-        mockMvc.perform(post("/user")).andExpect(status().isCreated());
+        mockMvc.perform(post("/user").requestAttr("user", new UserMock().buildUser())).andExpect(status().isCreated());
     }
 
     @Test

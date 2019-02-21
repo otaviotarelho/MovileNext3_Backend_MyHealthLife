@@ -1,14 +1,15 @@
 package edu.otaviotarelho.users.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
 @Table (uniqueConstraints = {@UniqueConstraint(columnNames = {"user", "professional"})})
 public class Relationships {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private Long user;
     private Long professional;
     private LocalDateTime creationTime;
