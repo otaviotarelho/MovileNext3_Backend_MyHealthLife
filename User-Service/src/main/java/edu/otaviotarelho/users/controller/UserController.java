@@ -7,12 +7,14 @@ import edu.otaviotarelho.users.service.UserService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import javax.validation.Valid;
-import java.lang.reflect.Type;
 import java.net.URI;
 import java.util.List;
 
@@ -67,11 +69,16 @@ public class UserController {
     }
 
     @GetMapping(value = "/all/{type}")
-    public ResponseEntity<List<UserDTO>> findAllByType(@PathVariable("type") UserType type){
-        Iterable<User> users = service.findAllUsersByType(type);
+    public ResponseEntity<Page<UserDTO>> findAllByType(@PathVariable("type") UserType type,
+                                                       @RequestParam(value="page", defaultValue="0") Integer page,
+                                                       @RequestParam(value="linesPerPage", defaultValue="24") Integer linePerPage,
+                                                       @RequestParam(value="orderBy", defaultValue="name") String orderBy,
+                                                       @RequestParam(value="direction", defaultValue="ASC") String direction){
+        PageRequest pageRequest = PageRequest.of(page, linePerPage, Sort.Direction.valueOf(orderBy), direction);
 
-        Type listType = new TypeToken<List<UserDTO>>() {}.getType();
-        List<UserDTO> userDTOS = new ModelMapper().map(users, listType);
+        Iterable<User> users = service.findAllUsersByType(type, pageRequest);
+
+        Page<UserDTO> userDTOS = new ModelMapper().map(users, new TypeToken<List<UserDTO>>() {}.getType());
 
         return ok().body(userDTOS);
     }

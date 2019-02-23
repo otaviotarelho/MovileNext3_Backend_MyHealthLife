@@ -12,6 +12,10 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 
 import java.util.Arrays;
 import java.util.List;
@@ -77,62 +81,59 @@ class UserServiceTest {
 
     @Test
     void shouldReturnAListOfUserByTypeUser(){
-        List<User> users = Arrays.asList(
-                new UserMock().withUserType(UserType.USER).buildUser(),
-                new UserMock().withUserType(UserType.USER).buildUser(),
-                new UserMock().withUserType(UserType.USER).buildUser(),
-                new UserMock().withUserType(UserType.USER).buildUser(),
-                new UserMock().withUserType(UserType.USER).buildUser()
-        );
+        List<User> users = getUsersList(UserType.USER);
 
-        when(repository.findAllByType(any())).thenReturn(users);
+        Page<User> page = new PageImpl<>(users);
 
-        assertEquals(users, userService.findAllUsersByType(UserType.USER));
+        PageRequest pageRequest = PageRequest.of(0, 24, Sort.Direction.ASC, "name");
+
+        when(repository.findAllByType(UserType.USER, pageRequest)).thenReturn(page);
+
+        assertEquals(page, userService.findAllUsersByType(UserType.USER, pageRequest));
     }
 
     @Test
     void shouldReturnAListOfUserByTypePersonalTrainer(){
-        List<User> users = Arrays.asList(
-                new UserMock().withUserType(UserType.PERSONAL_TRAINER).buildUser(),
-                new UserMock().withUserType(UserType.PERSONAL_TRAINER).buildUser(),
-                new UserMock().withUserType(UserType.PERSONAL_TRAINER).buildUser(),
-                new UserMock().withUserType(UserType.PERSONAL_TRAINER).buildUser(),
-                new UserMock().withUserType(UserType.PERSONAL_TRAINER).buildUser()
-        );
+        List<User> users = getUsersList(UserType.PERSONAL_TRAINER);
 
-        when(repository.findAllByType(any())).thenReturn(users);
+        Page<User> page = new PageImpl<>(users);
 
-        assertEquals(users, userService.findAllUsersByType(UserType.PERSONAL_TRAINER));
+        PageRequest pageRequest = PageRequest.of(0, 24, Sort.Direction.ASC, "name");
+
+        when(repository.findAllByType(UserType.PERSONAL_TRAINER, pageRequest)).thenReturn(page);
+
+        assertEquals(page, userService.findAllUsersByType(UserType.PERSONAL_TRAINER, pageRequest));
     }
 
     @Test
     void shouldReturnAListOfUserByTypeDoctor(){
-        List<User> users = Arrays.asList(
-                new UserMock().withUserType(UserType.DOCTOR).buildUser(),
-                new UserMock().withUserType(UserType.DOCTOR).buildUser(),
-                new UserMock().withUserType(UserType.DOCTOR).buildUser(),
-                new UserMock().withUserType(UserType.DOCTOR).buildUser(),
-                new UserMock().withUserType(UserType.DOCTOR).buildUser()
-        );
+        List<User> users = getUsersList(UserType.DOCTOR);
 
-        when(repository.findAllByType(any())).thenReturn(users);
+        Page<User> page = new PageImpl<>(users);
 
-        assertEquals(users, userService.findAllUsersByType(UserType.DOCTOR));
+        PageRequest pageRequest = PageRequest.of(0, 24, Sort.Direction.ASC, "name");
+
+        when(repository.findAllByType(UserType.DOCTOR, pageRequest)).thenReturn(page);
+
+        assertEquals(page, userService.findAllUsersByType(UserType.DOCTOR, pageRequest));
     }
 
     @Test
     void shouldReturnAListOfUserByTypeAdmin(){
-        List<User> users = Arrays.asList(
-                new UserMock().withUserType(UserType.ADMIN).buildUser(),
-                new UserMock().withUserType(UserType.ADMIN).buildUser(),
-                new UserMock().withUserType(UserType.ADMIN).buildUser(),
-                new UserMock().withUserType(UserType.ADMIN).buildUser(),
-                new UserMock().withUserType(UserType.ADMIN).buildUser()
-        );
+        List<User> users = getUsersList(UserType.ADMIN);
 
-        when(repository.findAllByType(any())).thenReturn(users);
+        Page<User> page = new PageImpl<>(users);
 
-        assertEquals(users, userService.findAllUsersByType(UserType.ADMIN));
+        PageRequest pageRequest = PageRequest.of(0, 24, Sort.Direction.ASC, "name");
+
+        when(repository.findAllByType(UserType.ADMIN, pageRequest)).thenReturn(page);
+
+        assertEquals(page, userService.findAllUsersByType(UserType.ADMIN, pageRequest));
+    }
+
+    private List<User> getUsersList(UserType type) {
+        User user = new UserMock().withUserType(type).buildUser();
+        return Arrays.asList(user, user, user, user,  user);
     }
 
 }

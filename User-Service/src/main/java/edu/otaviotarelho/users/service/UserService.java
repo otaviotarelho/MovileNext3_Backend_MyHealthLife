@@ -5,9 +5,9 @@ import edu.otaviotarelho.users.domain.enumerator.UserType;
 import edu.otaviotarelho.users.repository.UserRepository;
 import org.hibernate.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class UserService {
@@ -31,8 +31,8 @@ public class UserService {
         repository.delete(user);
     }
 
-    public List<User> findAllUsersByType(UserType type){
-        return repository.findAllByType(type);
+    public Page<User> findAllUsersByType(UserType type, PageRequest pageRequest){
+        return repository.findAllByType(type, pageRequest);
     }
 
     public User getUserByUsernameAndPassword(User user){
